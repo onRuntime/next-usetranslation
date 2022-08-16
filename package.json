@@ -21,7 +21,7 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
-    "next": ">=9",
+    "next": ">=10",
     "react": ">=16"
   },
   "husky": {
