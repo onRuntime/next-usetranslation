@@ -2,11 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import useTranslation from "../../../src";
+import useTranslation from "@onruntime/next-usetranslation";
 
 const Home: NextPage = () => {
-  const { locale } = useTranslation();
-  console.log("locale", locale);
+  useTranslation();
   return (
     <div className={styles.container}>
       <Head>
