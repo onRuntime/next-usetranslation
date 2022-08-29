@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import useTranslation from "@onruntime/next-usetranslation";
 
 const Home: NextPage = () => {
-  useTranslation();
+  const { t } = useTranslation();
   return (
     <div className={styles.container}>
       <Head>
@@ -15,9 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>{t("welcome")}</h1>
 
         <p className={styles.description}>
           {"Get started by editing "}
