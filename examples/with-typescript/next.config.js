@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
 
-const { withTranslation } = require("@onruntime/next-usetranslation");
-
 const config = {
   reactStrictMode: true,
   swcMinify: true,
@@ -12,4 +10,4 @@ const config = {
   },
 };
 
-module.exports = withTranslation(config);
+module.exports = config;
